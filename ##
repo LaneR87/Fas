@@ -1,0 +1,35 @@
+#include <iostream>
+#include <vector>
+#include <algorithm>
+#include <random>
+
+int main() {
+    // Генерируем случайное начальное значение для генератора случайных чисел
+    std::random_device rd;
+    std::mt19937 gen(rd());
+
+    // Создаем случайный массив из 100 элементов
+    std::vector<int> numbers(100);
+    for (int i = 0; i < 100; ++i) {
+        numbers[i] = gen() % 1000; // Генерируем случайное число от 0 до 999
+    }
+
+    // Выводим неотсортированный массив
+    std::cout << "Неотсортированный массив: ";
+    for (const int& num : numbers) {
+        std::cout << num << " ";
+    }
+    std::cout << std::endl;
+
+    // Сортируем массив
+    std::sort(numbers.begin(), numbers.end());
+
+    // Выводим отсортированный массив
+    std::cout << "Отсортированный массив: ";
+    for (const int& num : numbers) {
+        std::cout << num << " ";
+    }
+    std::cout << std::endl;
+
+    return 0;
+}

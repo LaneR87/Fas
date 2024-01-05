@@ -54,23 +54,4 @@ int main() {
     for (const int& num : numbers) {
         std::cout << num << " ";
     }    }
-    std::cout << std::endl;
-
-    // Сортируем массив
-    std::sort(numbers.begin(), numbers.end());
-
-    // Выводим отсортированный массив
-    std::cout << "Отсортированный массив: ";
-    std::cout << std::endl;
-
-    // Сортируем массив
-    std::sort(numbers.begin(), numbers.end());
-
-    // Выводим отсортированный массив
-    std::cout << "Отсортированный массив: ";
-    for (const int& num : numb
-    std::cout << std::endl;
-
-    return 0;
-}
-   asd
+    std::cout << std::endl

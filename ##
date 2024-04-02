@@ -6,12 +6,6 @@
 int main() {
 
     std::cout << "Неотсортированный массив: ";
-    for (const int& num : numbers) {
-        std::cout << num << " ";
-
-    for (const int& num : numbers) {
-    std::sort(numbers.begin(), numbers.end());
-
     // Выводим отсортированный массив
     std::cout << "Отсортированный массив: ";
     for (const int& num : numbers) {

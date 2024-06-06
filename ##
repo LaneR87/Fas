@@ -8,13 +8,7 @@ int main() {
     std::cout << "Неотсортированный массив: ";
     // Выводим отсортированный массив
     std::cout << "Отсортированный массив: ";
-    std::cout << std::endl
-#include <iostream>
-#include <vector>
-#include <algorithm>
-#include <random>
-#include <random>
-int main() {
+
 
     std::cout << "Неотсортированный массив: ";
     // Выводим отсортированный массив
